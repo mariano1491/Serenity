@@ -1,12 +1,39 @@
 :root {
     --primary: #B78D65;
-    --light: #F8F8F8;
+    --light: rgb(245, 245, 245);
     --dark: #252525;
 }
 
-
-
-
 h1 {
     color: var(--primary);
+}
+
+.contactoNav {
+    background-color: var(--light);
+}
+
+.phone {
+    margin-top: 0.2rem;
+}
+
+.phone a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.social-media p a:hover, 
+.phone a:hover {
+    color: var(--primary);
+}
+
+.social-media p a:hover {
+    transform: scale(1.2);
+    transition: all ease-in 150ms;
+}
+
+.social-media p a {
+    padding: 0.5rem 0px 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--dark);
+    transition: all ease-in 150ms;
 }
