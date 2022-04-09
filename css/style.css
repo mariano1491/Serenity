@@ -37,3 +37,7 @@ h1 {
     color: var(--dark);
     transition: all ease-in 150ms;
 }
+
+a {
+    color: #B78D65;
+}
