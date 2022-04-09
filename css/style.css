@@ -40,16 +40,6 @@
 }
 
 .social-media p a {
-<<<<<<< HEAD
-    padding: 0.5rem 0px 0.5rem 1rem;
-    text-decoration: none;
-    color: var(--dark);
-    transition: all ease-in 150ms;
-}
-
-a {
-    color: #B78D65;
-=======
   padding: 0.5rem 0px 0.5rem 1rem;
   text-decoration: none;
   color: var(--dark);
@@ -64,5 +54,4 @@ a {
 .btn:hover {
     color: var(--light);
     background-color: var(--primary);
->>>>>>> aabfc66c7d5b7610a9a56bb7ac9a2b744336a33d
 }
