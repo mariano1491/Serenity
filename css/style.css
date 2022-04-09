@@ -6,18 +6,26 @@
   --dark: #252525;
 }
 
-.prueba{
-    color: red;
+.container {
+  margin: 0 0.5rem;
+}
+
+.btn {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn:hover {
+  color: var(--light);
+  background-color: var(--primary);
 }
 
 /* Header */
 .navbar {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-  }
-
-.contactoNav {
-  background-color: var(--light);
+	display: flex;
+	justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
 }
 
 .phone {
@@ -27,31 +35,49 @@
 .phone a {
   text-decoration: none;
   color: var(--dark);
+  transition: all ease-in 150ms;
+}
+
+.contactoNav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--light);
 }
 
 .social-media p a:hover,
 .phone a:hover {
   color: var(--primary);
-}
-
-.social-media p a:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
   transition: all ease-in 150ms;
 }
 
 .social-media p a {
-  padding: 0.5rem 0px 0.5rem 1rem;
+  margin: 0.5rem 0px 0.5rem 1rem;
   text-decoration: none;
   color: var(--dark);
   transition: all ease-in 150ms;
 }
 
-.btn {
-    color: var(--primary);
-    border-color: var(--primary);
+.nav-link {
+  color: var(--light);
 }
 
-.btn:hover {
-    color: var(--light);
-    background-color: var(--primary);
+.nav-link:focus {
+  color: var(--primary);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.buscar {
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.buscar:focus {
+  outline-offset: 0.1rem;
+  outline: var(--primary) 2px solid;
 }
