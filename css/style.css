@@ -1,39 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
-    --primary: #B78D65;
-    --light: rgb(245, 245, 245);
-    --dark: #252525;
+  --primary: #b78d65;
+  --light: rgb(245, 245, 245);
+  --dark: #252525;
 }
 
-h1 {
-    color: var(--primary);
+.prueba{
+    color: red;
 }
+
+/* Header */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+  }
 
 .contactoNav {
-    background-color: var(--light);
+  background-color: var(--light);
 }
 
 .phone {
-    margin-top: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 .phone a {
-    text-decoration: none;
-    color: var(--dark);
+  text-decoration: none;
+  color: var(--dark);
 }
 
-.social-media p a:hover, 
+.social-media p a:hover,
 .phone a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .social-media p a:hover {
-    transform: scale(1.2);
-    transition: all ease-in 150ms;
+  transform: scale(1.2);
+  transition: all ease-in 150ms;
 }
 
 .social-media p a {
-    padding: 0.5rem 0px 0.5rem 1rem;
-    text-decoration: none;
-    color: var(--dark);
-    transition: all ease-in 150ms;
+  padding: 0.5rem 0px 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  transition: all ease-in 150ms;
+}
+
+.btn {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn:hover {
+    color: var(--light);
+    background-color: var(--primary);
 }
