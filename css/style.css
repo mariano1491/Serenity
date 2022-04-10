@@ -29,11 +29,11 @@
   text-align: center;
 }
 
-.phone {
+.infoHeader {
   margin-top: 0.2rem;
 }
 
-.phone a {
+.infoHeader a {
   text-decoration: none;
   color: var(--dark);
   transition: all ease-in 150ms;
@@ -46,7 +46,7 @@
 }
 
 .social-media p a:hover,
-.phone a:hover {
+.infoHeader a:hover {
   color: var(--primary);
 	transform: scale(1.2);
   transition: all ease-in 150ms;
@@ -83,7 +83,13 @@
   outline: var(--primary) 2px solid;
 }
 
+.carousel {
+  height: 35rem;
+}
 
+.slider {
+  object-fit: cover;
+}
 
 
 
