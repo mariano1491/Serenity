@@ -99,7 +99,8 @@
 }
 
 .tituloSlider span {
-  color: #DF6D00;
+  color: var(--primary);
+  /* color: #DF6D00; */
 }
 
 .fondo {
