@@ -127,3 +127,26 @@
     display: none;
   }
 }
+
+.nav-item {
+  padding: 10px;
+}
+
+.dropdown-menu {
+  background-color: var(--dark);
+  
+  position: relative;
+}
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  background-color: var(--primary);
+  height: 90%;
+  width: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dropdown-item{
+  color: var(--light);
+}
