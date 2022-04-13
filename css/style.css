@@ -150,3 +150,53 @@
 .dropdown-item{
   color: var(--light);
 }
+
+.seccionUno {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+}
+
+.seccionUno h2 {
+  color: var(--primary);
+}
+
+.fotoSantiago img {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+
+.seccionDos {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.seccionDos h2 {
+  color: var(--primary);
+}
+
+.cardsSeccionDos {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btnInfo {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  color: var(--dark);
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+.btnInfo:hover {
+  color: var(--light);
+}
+
+.bordeSeccionDos {
+  border: solid var(--dark) 2px;
+}
