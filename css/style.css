@@ -30,8 +30,8 @@
 
 /* Header */
 .navbar {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   text-align: center;
@@ -61,7 +61,7 @@
 .social-media p a:hover,
 .infoHeader a:hover {
   color: var(--primary);
-	transform: scale(1.2);
+  transform: scale(1.2);
   transition: all ease-in 150ms;
 }
 
@@ -74,11 +74,11 @@
 
 .dropdown-menu {
   background-color: var(--dark);
-  
+
   position: relative;
 }
 .dropdown-menu::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 5px;
   background-color: var(--primary);
@@ -87,7 +87,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.dropdown-item{
+.dropdown-item {
   color: var(--light);
 }
 
@@ -117,21 +117,31 @@
 
 /* Carousel */
 .carousel {
+  position: relative;
   height: 35rem;
 }
 
 .tituloSlider {
   position: absolute;
   z-index: 100;
-  bottom: 50%;
+  display: flex;
+  gap: 0.8rem;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: floralwhite;
+  overflow: hidden;
 }
 
-.tituloSlider span {
+.sliderPalabras {
   color: var(--primary);
   /* color: #DF6D00; */
+  width: 14rem;
+}
+
+.sliderPalabras h1 {
+  position: absolute;
+  top: -3.5rem;
 }
 
 .fondo {
