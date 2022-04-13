@@ -20,13 +20,25 @@
   background-color: var(--primary);
 }
 
+.seccion {
+  margin-top: 60px;
+}
+
+.seccion h2 {
+  color: var(--primary);
+}
+
 /* Header */
 .navbar {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.nav-item {
+  margin: 10px;
 }
 
 .infoHeader {
@@ -49,7 +61,7 @@
 .social-media p a:hover,
 .infoHeader a:hover {
   color: var(--primary);
-	transform: scale(1.2);
+  transform: scale(1.2);
   transition: all ease-in 150ms;
 }
 
@@ -58,6 +70,25 @@
   text-decoration: none;
   color: var(--dark);
   transition: all ease-in 150ms;
+}
+
+.dropdown-menu {
+  background-color: var(--dark);
+
+  position: relative;
+}
+.dropdown-menu::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  background-color: var(--primary);
+  height: 90%;
+  width: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dropdown-item {
+  color: var(--light);
 }
 
 .nav-link {
@@ -86,21 +117,31 @@
 
 /* Carousel */
 .carousel {
+  position: relative;
   height: 35rem;
 }
 
 .tituloSlider {
   position: absolute;
   z-index: 100;
-  bottom: 50%;
+  display: flex;
+  gap: 0.8rem;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: floralwhite;
+  overflow: hidden;
 }
 
-.tituloSlider span {
+.sliderPalabras {
   color: var(--primary);
   /* color: #DF6D00; */
+  width: 14rem;
+}
+
+.sliderPalabras h1 {
+  position: absolute;
+  top: -3.5rem;
 }
 
 .fondo {
@@ -113,6 +154,64 @@
 
 .slider {
   object-fit: cover;
+}
+
+/* Sobre Mí */
+.seccionUno {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fotoSantiago img {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+
+/* Herramientas */
+.seccionDos {
+  text-align: center;
+}
+
+.cardsSeccionDos {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bordeSeccionDos {
+  border: solid var(--dark) 2px;
+  transition: all ease-in 150ms;
+}
+
+.imgCard {
+  margin: auto;
+  margin-top: 1rem;
+  width: 16rem;
+  height: 15rem;
+}
+
+.imgCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.btnInfo {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.btnInfo:hover {
+  color: var(--light);
 }
 
 /* Media Queries */
