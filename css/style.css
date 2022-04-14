@@ -85,7 +85,7 @@
 }
 .dropdown-item {
   color: var(--light);
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-link {
@@ -180,7 +180,6 @@
 }
 
 .bordeSeccionDos {
-  
   transition: all ease-in 150ms;
   box-shadow: 1px 1px 1px 1px var(--primary);
 }
@@ -217,7 +216,6 @@
   .searchform {
     display: none;
   }
-  
 }
 
 @media (max-width: 1000px) {
@@ -229,17 +227,16 @@
 @media screen and (max-width: 1000px) {
   .seccionUno {
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
 }
+
 @media screen and (max-width: 767px) {
-footer {
-  text-align: center;
-} 
+  footer {
+    text-align: center;
+  }
 }
 
 .nav-item {
@@ -248,11 +245,11 @@ footer {
 
 .dropdown-menu {
   background-color: var(--dark);
-  
+
   position: relative;
 }
 .dropdown-menu::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 5px;
   background-color: var(--primary);
@@ -261,15 +258,13 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
-.dropdown-item{
+.dropdown-item {
   color: var(--light);
 }
-
 
 .seccionUno h2 {
   color: var(--primary);
 }
-
 
 .seccionDos {
   margin-top: 60px;
@@ -294,7 +289,6 @@ footer {
   color: var(--dark);
   border-radius: 5px;
   background-color: var(--primary);
-  
 }
 
 .btnInfo:hover {
@@ -310,14 +304,14 @@ footer {
   color: #777777;
   font-weight: normal;
   text-transform: capitalize;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
 }
 
 .footer .btn.btn-link::before {
   position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: var(--primary);
   margin-right: 10px;
@@ -336,7 +330,7 @@ footer {
 .footer .copyright {
   padding: 25px 0;
   font-size: 15px;
-  border-top: 1px solid rgba(256, 256, 256, .1);
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
 
 .footer .copyright a {
@@ -354,7 +348,7 @@ footer {
   color: rgb(119, 119, 119);
 }
 .text-primary {
-  color: #B78D65 !important;
+  color: #b78d65 !important;
 }
 
 .back-to-top {
@@ -366,7 +360,7 @@ footer {
 }
 .btn {
   font-weight: 500;
-  transition: .5s;
+  transition: 0.5s;
 }
 .navbar-Toggler {
   background-color: var(--primary);
@@ -374,15 +368,14 @@ footer {
 
 .btn.btn-primary,
 .btn.btn-secondary {
-  background-color: #B78D65;
-    border-color: #B78D65;
+  background-color: #b78d65;
+  border-color: #b78d65;
 }
 
 .btn-square {
   width: 38px;
   height: 38px;
   background-color: var(--primary);
-  
 }
 
 .btn-square:hover {
@@ -411,9 +404,53 @@ footer {
 }
 
 /*Blog*/
-
 .blog {
   color: var(--primary);
   margin-top: 60px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.sliderBlog {
+  height: 30rem;
+}
+
+.margenImg {
+  margin: auto;
+}
+
+.sliderFieldset {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 100%;
+}
+
+.sliderLegend {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--light);
+  width: 35rem;
+}
+
+
+.sliderLegend h4 {
+  opacity: .8;
+}
+
+.sliderLegend button {
+  width: 6rem;
+  margin: auto;
+  margin-top: 10px;
+  background-color: var(--primary);
+  color: var(--light);
 }
