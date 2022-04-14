@@ -183,8 +183,9 @@
 }
 
 .bordeSeccionDos {
-  border: solid var(--dark) 2px;
+  
   transition: all ease-in 150ms;
+  box-shadow: 1px 1px 1px 1px var(--primary);
 }
 
 .imgCard {
@@ -296,9 +297,6 @@
   color: var(--light);
 }
 
-.bordeSeccionDos {
-  border: solid var(--dark) 2px;
-}
 
 /*Footer
 .footerContainer {
