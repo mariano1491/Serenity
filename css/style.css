@@ -346,7 +346,10 @@ footer {
 .footer .copyright a:hover {
   color: var(--primary);
 }
-
+.derechos {
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
 .mb-2 {
   color: rgb(119, 119, 119);
 }
@@ -378,11 +381,18 @@ footer {
 .btn-square {
   width: 38px;
   height: 38px;
+  background-color: var(--primary);
+  
+}
+
+.btn-square:hover {
+  background-color: var(--light);
 }
 
 .btn-sm-square {
   width: 32px;
   height: 32px;
+  background-color: var(--primary);
 }
 
 .btn-lg-square {
@@ -398,4 +408,12 @@ footer {
   align-items: center;
   justify-content: center;
   font-weight: normal;
+}
+
+/*Blog*/
+
+.blog {
+  color: var(--primary);
+  margin-top: 60px;
+  text-align: center;
 }
