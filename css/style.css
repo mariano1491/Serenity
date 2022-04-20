@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --primary: #b78d65;
+  --primary: #ff5c5c;
   --light: rgb(245, 245, 245);
   --dark: #252525;
 }
@@ -31,6 +31,9 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   text-align: center;
+}
+.navbar-brand {
+  filter:brightness();
 }
 
 .nav-item {
@@ -151,6 +154,10 @@
 
 .slider {
   object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Sobre Mí */
@@ -182,7 +189,7 @@
 .bordeSeccionDos {
   
   transition: all ease-in 150ms;
-  box-shadow: 1px 1px 1px 1px var(--primary);
+  box-shadow: 1px 2px 1px 2px ;
 }
 
 .imgCard {
