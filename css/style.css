@@ -21,6 +21,11 @@ body {
   margin-bottom: 2rem;
   font-weight: 600;
   color: var(--dark);
+  text-decoration-color: var(--primary2);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.4rem;
+  text-decoration-line: underline;
+
 }
 
 .btn {
@@ -109,12 +114,22 @@ body {
 .contactoNav {
   display: flex;
   justify-content: space-around;
+  padding: 0 1rem;
   background-color: var(--claro);
+
 }
 
 .navbar-Toggler {
-  background-color: var(--primary);
+  font-size: 1.5rem;
+  background-color: var(--claro);
+
 }
+.navbar-toggler:focus {
+  color: var(--primary2);
+  box-shadow: 0 0 0 2px var(--primary2);
+  transition: all 250ms ease-in;
+}
+
 
 .social-media p a:hover,
 .infoHeader a:hover {
@@ -238,7 +253,7 @@ body {
 
 #sobreMi {
   margin-bottom: 1rem;
-  color: var(--primary);
+  
 }
 
 .seccionUnoInfo {
@@ -305,18 +320,21 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
-  background-color: var(--claro);
-  border: 1px solid var(--dark);
-  color: var(--dark);
+  background-color: var(--primary2);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
   text-decoration: none;
   transition: transform ease-in 250ms;
+
 }
 
 .btnInfo:hover {
   transform: scale(1.05);
-  background-color: rgb(226, 211, 184);
-  color: var(--dark);
+  background-color: var(--primary);
+  color: white;
   transition: transform ease-in 250ms;
+
 }
 
 div h2 {
