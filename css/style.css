@@ -18,6 +18,8 @@ body {
 }
 
 .seccion h2 {
+  margin-bottom: 2rem;
+  font-weight: 600;
   color: var(--dark);
 }
 
@@ -61,18 +63,6 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: normal;
-}
-
-.carousel {
-  height: 35rem;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  height: 100%;
 }
 
 /* Header */
@@ -137,16 +127,6 @@ body {
   transition: all ease-in 150ms;
 }
 
-.btnBuscar {
-  color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btnBuscar:hover {
-  color: var(--light);
-  background-color: var(--primary);
-}
-
 .dropdown-menu {
   background-color: var(--light);
   position: relative;
@@ -193,41 +173,54 @@ body {
   outline: var(--primary) 2px solid;
 }
 
-/* Carousel */
-.tituloSlider {
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  gap: 0.8rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: floralwhite;
-  overflow: hidden;
-}
-
-.sliderPalabras {
-  color: var(--primary);
-  /* color: #DF6D00; */
-  width: 14rem;
-}
-
-.sliderPalabras h1 {
-  position: absolute;
-  top: -3.5rem;
-}
-
+/* Parallax */
 .fondo {
   position: absolute;
   z-index: 1;
   background-color: var(--dark);
-  opacity: .3;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
 }
 
-.slider {
-  object-fit: cover;
+.fondoIndex {
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--light);
+}
+
+.infoFondoIndex {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 25rem;
+}
+
+.infoFondoIndex h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.parallax {
+  background-image: url('https://www.bachrescue.com//assets/01-Content-Library/01_pages/03_blog_article/06-Spain/RESCUE_SPAIN_Como_Conservar_la_serenidad_1400x420.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btnFondoIndex {
+  color: var(--dark);
+  background-color: rgb(228, 221, 209);
+}
+
+.btnFondoIndex:hover {
+  transform: scale(1.2);
+  background-color: rgb(226, 211, 184);
+  color: var(--dark);
 }
 
 /* Sobre Mí */
@@ -277,7 +270,6 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -334,6 +326,7 @@ div h2 {
   margin-bottom: 40px;
   text-align: center;
 }
+
 .btnBlog {
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -342,8 +335,12 @@ div h2 {
   border: 1px solid var(--dark);
   color: var(--dark);
   text-decoration: none;
- 
 }
+
+.btnBlog:hover {
+  background-color: rgb(226, 211, 184);
+}
+
 .sliderBlog {
   position: relative;
   display: flex;
@@ -365,14 +362,9 @@ div h2 {
   margin: 0 1rem;
   background-position: center;
   background-size: cover;
-  width: 300px;
+  width: 350px;
   height: 300px;
-  box-shadow: 0 30px 50px rgb(0, 0, 0, 0.2);
-  
-}
-
-.swiper-slide-active {
-  filter: blur(0);
+  box-shadow: 0px 100px 70px 20px rgb(0, 0, 0, 0.2);
 }
 
 .sliderImg {
@@ -399,6 +391,111 @@ div h2 {
   bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
+}
+/* Eventos */
+.containerEventos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 3rem;
+}
+
+.containerEventosInner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  max-width: 560px;
+}
+
+.column h1 {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+.column a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  transition: all 350ms ease;
+}
+
+.column a:hover {
+  color: var(--primary2);
+  transition: all 250ms ease;
+}
+
+.two-column {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 1.5rem;
+}
+
+.eventoImg {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 1rem;
+}
+
+.eventoImg a {
+  display: block;
+  width: 100%;
+}
+
+.eventoImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 350ms ease;
+}
+
+.eventoImg img:hover {
+  box-shadow: 0 2px 8px 5px #ff797988;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.two-column .eventoImg {
+  width: 100%;
+  max-height: 175px;
+  margin-bottom: 1rem;
+}
+
+.fechaEvento {
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary2);
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 10px;
+  opacity: 0.7;
+  width: fit-content;
+  background: rgba(234, 115, 92, 0.1);
+}
+
+.logoEvento {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjI1IDNIMy43NWExLjUgMS41IDAgMDAtMS41IDEuNVYxNWExLjUgMS41IDAgMDAxLjUgMS41aDEwLjVhMS41IDEuNSAwIDAwMS41LTEuNVY0LjVhMS41IDEuNSAwIDAwLTEuNS0xLjV6TTEyIDEuNXYzTTYgMS41djNNMi4yNSA3LjVoMTMuNSIgc3Ryb2tlPSIjRUE3MzVDIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 18px 18px;
+  padding-left: 38px;
+}
+
+.columnaQueries {
+  margin-top: 40px;
 }
 
 /* Footer */
@@ -506,12 +603,10 @@ div h2 {
   .dropdown-menu::after {
     height: 60%;
     top: 100px;
-    
   }
   .dropdown-menu2::after {
     height: 70%;
     top: 115px;
-    
   }
 
   .dropdown-menu {
@@ -532,13 +627,20 @@ div h2 {
   .fotoSantiago {
     display: none;
   }
-  .columnaQueries {
-    flex-direction: column;
-  }
-.mediaLogo {
-  display: initial;
-}
 
+  .containerEventos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .mediaLogo {
+    display: initial;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -563,120 +665,21 @@ div h2 {
   .sectionUno {
     margin: 3.75rem 1.5rem 0 1.5rem;
   }
-  .columnaQueriesDos {
+
+  .containerEventosInner {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 450px
   }
-  .infoFondoIndex {
-  
+
+  .two-column {
     width: 100%;
   }
-  
-}
 
-.fondoIndex {
-  position: relative;
-  font-size: 1.2rem;
-  color: var(--light);
-}
+  .eventoImg {
+    height: 200px;
+  }
 
-.infoFondoIndex {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 9rem;
-  transform: translateY(-50%);
-  width: 30%;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("https://www.bachrescue.com//assets/01-Content-Library/01_pages/03_blog_article/06-Spain/RESCUE_SPAIN_Como_Conservar_la_serenidad_1400x420.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.btnFondoIndex {
-  color: var(--dark);
-  background-color: rgb(228, 221, 209);
-}
-
-.btnFondoIndex:hover {
-  transform: scale(1.2);
-  background-color: rgb(226, 211, 184);
-  color: var(--dark);
-}
-
-.animate__fadeInRight {
-  --animate-duration: 2s;
-}
-
-.column {
-  width: 49%;
-  max-width: 560px;
-}
-
-.two-column {
-  max-width: 260px;
-  width: 48%;
-  margin-bottom: 40px;
-}
-
-.eventoImg img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.eventoImg img:hover {
-box-shadow: 0 2px 8px 5px #ff797988;
-cursor: pointer;
-}
-
-.eventoImg {
-  max-width: 500px;
-  max-height: 350px;
-  margin-bottom: 8px;
-}
-
-.two-column .eventoImg {
-  max-width: 250px;
-  max-height: 175px;
-  margin-bottom: 10px;
-}
-
-.fechaEvento {
-  
-    border-radius: 8px;
-    padding: 6px 10px;
-    font-size: 12px;
-    line-height: 200%;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    color: var(--primary2);
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 6px;
-    margin-top: 10px;
-    opacity: .7;
-    background: rgba(234,115,92,.1);
-}
-.logoEvento {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjI1IDNIMy43NWExLjUgMS41IDAgMDAtMS41IDEuNVYxNWExLjUgMS41IDAgMDAxLjUgMS41aDEwLjVhMS41IDEuNSAwIDAwMS41LTEuNVY0LjVhMS41IDEuNSAwIDAwLTEuNS0xLjV6TTEyIDEuNXYzTTYgMS41djNNMi4yNSA3LjVoMTMuNSIgc3Ryb2tlPSIjRUE3MzVDIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-  background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 18px 18px;
-  padding-left: 38px;
-  
-}
-.columnaQueries {
-  margin-top: 40px;
+  .two-column .eventoImg {
+    max-height: 200px;
+  }
 }
