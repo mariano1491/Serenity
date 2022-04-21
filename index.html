@@ -31,50 +31,53 @@
       <section class="ftco-section">
         <div class="wrap contactoNav">
           <div class="container-fluid">
-            <div class="row justify-content-between">
-              <div class="col d-flex">
-                <p class="mb-0 infoHeader">
-                  <span class="fa fa-phone"></span> <a href="#">+00 1234 567</a>
-                </p>
-                <p class="mb-0 infoHeader">
-                  <span class="fa fa-envelope"></span>
-                  <a href="#">info@example.com</a>
-                </p>
-              </div>
-              <div class="col d-flex justify-content-end">
-                <div class="social-media">
-                  <p class="mb-0 d-flex">
-                    <a
-                      href="#"
-                      class="d-flex align-items-center justify-content-center"
-                      ><span class="fa fa-facebook"
-                        ><i class="sr-only">Facebook</i></span
-                      ></a
-                    >
-                    <a
-                      href="#"
-                      class="d-flex align-items-center justify-content-center"
-                      ><span class="fa fa-twitter"
-                        ><i class="sr-only">Twitter</i></span
-                      ></a
-                    >
-                    <a
-                      href="#"
-                      class="d-flex align-items-center justify-content-center"
-                      ><span class="fa fa-instagram"
-                        ><i class="sr-only">Instagram</i></span
-                      ></a
-                    >
-                    <a
-                      href="#"
-                      class="d-flex align-items-center justify-content-center"
-                      ><span class="fa fa-whatsapp"
-                        ><i class="sr-only">Whatsapp</i></span
-                      ></a
-                    >
+            <div class="contactoNavCol">
+              <div class="row justify-content-between w-100">
+                <div class="col d-flex">
+                  <p class="mb-0 infoHeader">
+                    <span class="fa fa-phone"></span> <a href="#">+00 1234 567</a>
+                  </p>
+                  <p class="mb-0 infoHeader">
+                    <span class="fa fa-envelope"></span>
+                    <a href="#">info@example.com</a>
                   </p>
                 </div>
+                <div class="col d-flex justify-content-end">
+                  <div class="social-media">
+                    <p class="mb-0 d-flex">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center"
+                        ><span class="fa fa-facebook"
+                          ><i class="sr-only">Facebook</i></span
+                        ></a
+                      >
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center"
+                        ><span class="fa fa-twitter"
+                          ><i class="sr-only">Twitter</i></span
+                        ></a
+                      >
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center"
+                        ><span class="fa fa-instagram"
+                          ><i class="sr-only">Instagram</i></span
+                        ></a
+                      >
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center"
+                        ><span class="fa fa-whatsapp"
+                          ><i class="sr-only">Whatsapp</i></span
+                        ></a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
+             
               <a class="navbar-brand justify-content-center" href="index.html"
                 ><img src="./img/Serenity.png" alt="Logo Serenity"
               /></a>
@@ -89,7 +92,7 @@
               ><img src="./img/Serenity.png" alt="Logo Serenity"
             /></a>
             <button
-              class="navbar-toggler btn"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#ftco-nav"
@@ -459,8 +462,8 @@
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
-        <div class="row footerMedia">
-          <div class="col-lg-3 col-md-6">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footerSeccion">
             <h3 class="text-light mb-4">Contactos</h3>
             <p class="mb-2">
               <i class="fa fa-map-marker-alt footerIcon me-3"></i>123 Street,
@@ -487,7 +490,7 @@
               ></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 footerSeccion">
             <h3 class="text-light mb-4">Herramientas</h3>
             <a class="btn btn-link" href="">El juego de la felicidad</a>
             <a class="btn btn-link" href="">Mandalas de felicidad</a>
@@ -495,18 +498,18 @@
               >La felicidad esta en las galletas</a
             >
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 footerSeccion">
             <h3 class="text-light mb-4">Blog</h3>
             <a class="btn btn-link" href="">Relaciones</a>
             <a class="btn btn-link" href="">Filosofia</a>
             <a class="btn btn-link" href="">Proposito de vida</a>
             <a class="btn btn-link" href="">Politica y Economia</a>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 footerSeccion">
             <h3 class="text-light mb-4">Suscribirse</h3>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
-                class="bg-transparent w-100 py-3 ps-4 pe-5 inputEmail"
+                class="bg-transparent w-100 py-3 ps-3 pe-5 inputEmail"
                 type="text"
                 placeholder="Su Email"
               />
@@ -535,6 +538,7 @@
       ><i class="fa fa-solid fa-arrow-up"></i
     ></a>
 
+    
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
