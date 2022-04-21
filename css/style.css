@@ -417,3 +417,17 @@ footer {
   margin-top: 60px;
   text-align: center;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("https://img3.wallspic.com/crops/9/7/2/1/5/151279/151279-persona_con_sudadera_gris_de_pie_en_la_orilla_del_mar_durante_el_dia-1920x1080.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
