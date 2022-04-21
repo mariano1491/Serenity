@@ -112,7 +112,6 @@ body {
   height: 60px;
 }
 
-
 .navbar-Toggler {
   font-size: 1.5rem;
   background-color: var(--claro);
@@ -307,27 +306,23 @@ body {
   object-fit: cover;
 }
 
-.btnInfo {
+.btnPrimary {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
   background-color: var(--primary2);
   color: white;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
+  font-weight: 300;
   text-decoration: none;
   transition: transform ease-in 250ms;
-
 }
 
-.btnInfo:hover {
+.btnPrimary:hover {
   transform: scale(1.05);
   background-color: var(--primary);
   color: white;
   transition: transform ease-in 250ms;
-
 }
-
 
 /*Blog*/
 
@@ -384,15 +379,19 @@ body {
 .btnBlog {
   display: inline-block;
   padding: 0.4rem 0.8rem;
+  border: none;
   border-radius: 5px;
-  background-color: var(--claro);
-  border: 1px solid var(--dark);
-  color: var(--dark);
+  background-color: var(--primary2);
+  color: white;
   text-decoration: none;
+  transition: all 250ms ease-in;
+  font-weight: 300;
 }
 
 .btnBlog:hover {
-  background-color: rgb(226, 211, 184);
+  background-color: var(--primary);
+  color: white;
+  transition: all 250ms ease-in;
 }
 
 
