@@ -21,6 +21,10 @@ body {
   margin-bottom: 2rem;
   font-weight: 600;
   color: var(--dark);
+  text-decoration-color: var(--primary2);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.4rem;
+  text-decoration-line: underline;
 }
 
 .btn {
@@ -76,6 +80,7 @@ body {
 
 .navbar-brand {
   text-align: center;
+  width: fit-content;
   filter: contrast(0.1);
 }
 
@@ -93,8 +98,14 @@ body {
 }
 
 .infoHeader {
+  display: flex;
+  align-items: center;
   margin-top: 0.2rem;
   margin-right: 1.5rem;
+}
+
+.infoHeader span {
+  margin-right: 0.5rem;
 }
 
 .infoHeader a {
@@ -106,25 +117,43 @@ body {
 .contactoNav {
   display: flex;
   justify-content: space-around;
+  padding: 0 1rem;
   background-color: var(--claro);
 }
 
-.navbar-Toggler {
-  background-color: var(--primary);
-}
-
-.social-media p a:hover,
-.infoHeader a:hover {
-  color: var(--primary);
-  transform: scale(1.2);
-  transition: all ease-in 150ms;
+.contactoNavCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social-media p a {
   margin: 0.5rem 0px 0.5rem 1rem;
   text-decoration: none;
   color: var(--dark);
+  font-size: 1.1rem;
   transition: all ease-in 150ms;
+}
+
+.social-media p a:hover,
+.infoHeader a:hover {
+  color: var(--primary);
+  transition: all ease-in 150ms;
+}
+
+.social-media p a:hover {
+  transform: scale(1.2);
+}
+
+.navbar-toggler {
+  font-size: 1.5rem;
+  background-color: var(--claro);
+}
+
+.navbar-toggler:focus {
+  color: var(--primary2);
+  box-shadow: 0 0 0 2px var(--primary2);
+  transition: all 250ms ease-in;
 }
 
 .dropdown-menu {
@@ -235,7 +264,6 @@ body {
 
 #sobreMi {
   margin-bottom: 1rem;
-  color: var(--primary);
 }
 
 .seccionUnoInfo {
@@ -275,7 +303,8 @@ body {
 
 .bordeSeccionDos {
   transition: all ease-in 150ms;
-  box-shadow: 0px 2px 10px 3px rgb(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 8px 3px rgb(0, 0, 0, 0.2);
+  /* background: var(--claro); */
 }
 
 .bordeSeccionDos:hover {
@@ -298,27 +327,27 @@ body {
   object-fit: cover;
 }
 
+.card-title {
+  font-size: 1.5rem;
+}
+
 .btnInfo {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
-  background-color: var(--claro);
-  border: 1px solid var(--dark);
-  color: var(--dark);
+  background-color: var(--primary2);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
   text-decoration: none;
   transition: transform ease-in 250ms;
 }
 
 .btnInfo:hover {
   transform: scale(1.05);
-  background-color: rgb(226, 211, 184);
-  color: var(--dark);
+  background-color: var(--primary);
+  color: white;
   transition: transform ease-in 250ms;
-}
-
-div h2 {
-  border-bottom: 2px solid var(--claro);
-  display: inline-block;
 }
 
 /*Blog*/
@@ -392,6 +421,7 @@ div h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+
 /* Eventos */
 .containerEventos {
   display: flex;
@@ -503,6 +533,10 @@ div h2 {
   background-color: var(--dark);
 }
 
+.footerSeccion {
+  margin-bottom: 1rem;
+}
+
 .footer .btn.btn-link {
   display: block;
   margin-bottom: 5px;
@@ -578,9 +612,16 @@ div h2 {
   bottom: 30px;
   z-index: 99;
 }
+
+.back-to-top:focus {
+  box-shadow: none;
+  outline: black solid 2px;
+}
+
 .mediaLogo {
   display: none;
 }
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .fotoSantiago {
