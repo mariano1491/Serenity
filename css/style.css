@@ -324,12 +324,26 @@ body {
   transition: transform ease-in 250ms;
 }
 
+div h2 {
+  border-bottom: 2px solid var(--claro);
+  display: inline-block;
+}
+
 /*Blog*/
 .blog {
   margin-bottom: 40px;
   text-align: center;
 }
-
+.btnBlog {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  background-color: var(--claro);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  text-decoration: none;
+ 
+}
 .sliderBlog {
   position: relative;
   display: flex;
@@ -354,7 +368,7 @@ body {
   width: 300px;
   height: 300px;
   box-shadow: 0 30px 50px rgb(0, 0, 0, 0.2);
-  filter: blur(1px);
+  
 }
 
 .swiper-slide-active {
@@ -467,7 +481,9 @@ body {
   bottom: 30px;
   z-index: 99;
 }
-
+.mediaLogo {
+  display: none;
+}
 /* Media Queries */
 @media (max-width: 1200px) {
   .fotoSantiago {
@@ -488,7 +504,14 @@ body {
   }
 
   .dropdown-menu::after {
-    display: none;
+    height: 60%;
+    top: 100px;
+    
+  }
+  .dropdown-menu2::after {
+    height: 70%;
+    top: 115px;
+    
   }
 
   .dropdown-menu {
@@ -509,6 +532,13 @@ body {
   .fotoSantiago {
     display: none;
   }
+  .columnaQueries {
+    flex-direction: column;
+  }
+.mediaLogo {
+  display: initial;
+}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -533,6 +563,17 @@ body {
   .sectionUno {
     margin: 3.75rem 1.5rem 0 1.5rem;
   }
+  .columnaQueriesDos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px
+  }
+  .infoFondoIndex {
+  
+    width: 100%;
+  }
+  
 }
 
 .fondoIndex {
@@ -590,17 +631,52 @@ body {
   margin-bottom: 40px;
 }
 
-.eventoImg {
-  max-width: 500px;
-  max-height: 350px;
-}
-
 .eventoImg img {
   width: 100%;
   object-fit: cover;
+  border-radius: 8px;
+}
+.eventoImg img:hover {
+box-shadow: 0 2px 8px 5px #ff797988;
+cursor: pointer;
+}
+
+.eventoImg {
+  max-width: 500px;
+  max-height: 350px;
+  margin-bottom: 8px;
 }
 
 .two-column .eventoImg {
   max-width: 250px;
   max-height: 175px;
+  margin-bottom: 10px;
+}
+
+.fechaEvento {
+  
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--primary2);
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 10px;
+    opacity: .7;
+    background: rgba(234,115,92,.1);
+}
+.logoEvento {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjI1IDNIMy43NWExLjUgMS41IDAgMDAtMS41IDEuNVYxNWExLjUgMS41IDAgMDAxLjUgMS41aDEwLjVhMS41IDEuNSAwIDAwMS41LTEuNVY0LjVhMS41IDEuNSAwIDAwLTEuNS0xLjV6TTEyIDEuNXYzTTYgMS41djNNMi4yNSA3LjVoMTMuNSIgc3Ryb2tlPSIjRUE3MzVDIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 18px 18px;
+  padding-left: 38px;
+  
+}
+.columnaQueries {
+  margin-top: 40px;
 }
