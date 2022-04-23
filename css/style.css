@@ -4,7 +4,7 @@
   --primary: #ff5c5c;
   --light: rgb(245, 245, 245);
   --dark: #252525;
-  --claro: #f7edde;
+  --claro: #faf4eb;
   --primary2: #ff7979;
 }
 
@@ -13,8 +13,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.seccion {
+  margin-top: 60px;
+}
 
-
+.seccion h2 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration-color: var(--primary2);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.4rem;
+  text-decoration-line: underline;
+}
 
 .btn {
   font-weight: 500;
@@ -58,16 +69,15 @@ body {
   font-weight: normal;
 }
 
-
 /*Nav*/
-
 .contactoNav {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
+  padding-top: 0.2rem;
   background-color: var(--claro);
-
 }
+
 .infoHeader {
   margin-top: 0.2rem;
   margin-right: 1.5rem;
@@ -78,6 +88,7 @@ body {
   color: var(--dark);
   transition: all ease-in 150ms;
 }
+
 .social-media p a:hover,
 .infoHeader a:hover {
   color: var(--primary);
@@ -87,10 +98,12 @@ body {
 
 .social-media p a {
   margin: 0.5rem 0px 0.5rem 1rem;
-  text-decoration: none;
   color: var(--dark);
+  font-size: 1.1rem;
+  text-decoration: none;
   transition: all ease-in 150ms;
 }
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -98,11 +111,11 @@ body {
   font-size: 0.9rem;
   text-align: center;
 }
-.navbar-brand {
-  filter:brightness();
-}
 
 .navbar-brand {
+  display: block;
+  margin: auto;
+  width: fit-content;
   text-align: center;
   filter: contrast(0.1);
 }
@@ -115,13 +128,14 @@ body {
 .navbar-Toggler {
   font-size: 1.5rem;
   background-color: var(--claro);
-
 }
+
 .navbar-toggler:focus {
   color: var(--primary2);
   box-shadow: 0 0 0 2px var(--primary2);
   transition: all 250ms ease-in;
 }
+
 .nav-item {
   margin: 10px;
 }
@@ -147,22 +161,18 @@ body {
 }
 
 .dropdown-item {
-  color: var(--light);
   transition: all 0.1s ease-in-out;
 }
 
 .nav-link {
-  color: var(--light);
   font-size: 1.1rem;
 }
 
-.nav-link:focus {
-  color: var(--primary);
-}
-
+.nav-link:focus,
 .nav-link:hover {
   color: var(--primary);
 }
+
 .mediaLogo {
   display: none;
 }
@@ -197,7 +207,6 @@ body {
   font-size: 3rem;
 }
 
-
 .btnFondoIndex {
   color: var(--dark);
   background-color: rgb(228, 221, 209);
@@ -208,6 +217,7 @@ body {
   background-color: rgb(226, 211, 184);
   color: var(--dark);
 }
+
 .parallax {
   background-image: url('https://www.bachrescue.com//assets/01-Content-Library/01_pages/03_blog_article/06-Spain/RESCUE_SPAIN_Como_Conservar_la_serenidad_1400x420.jpg');
   height: 100%;
@@ -226,24 +236,9 @@ body {
   border-radius: 5px;
   background-color: var(--claro);
 }
-.seccion {
-  margin-top: 60px;
-}
-
-.seccion h2 {
-  margin-bottom: 2rem;
-  font-weight: 600;
-  color: var(--dark);
-  text-decoration-color: var(--primary2);
-  text-decoration-skip-ink: none;
-  text-underline-offset: 0.4rem;
-  text-decoration-line: underline;
-
-}
 
 #sobreMi {
   margin-bottom: 1rem;
-  
 }
 
 .seccionUnoInfo {
@@ -325,7 +320,6 @@ body {
 }
 
 /*Blog*/
-
 .sliderBlog {
   position: relative;
   display: flex;
@@ -335,6 +329,7 @@ body {
   height: 550px;
   background-color: var(--claro);
 }
+
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -348,7 +343,6 @@ body {
   background-size: cover;
   width: 350px;
   height: 300px;
-  
 }
 
 .swiper-slide img {
@@ -361,6 +355,7 @@ body {
   width: 100%;
   height: 250px;
 }
+
 .infoSlider {
   position: relative;
   height: 230px;
@@ -382,10 +377,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: var(--primary2);
-  color: white;
-  text-decoration: none;
   transition: all 250ms ease-in;
-  font-weight: 300;
 }
 
 .btnBlog:hover {
@@ -394,22 +386,26 @@ body {
   transition: all 250ms ease-in;
 }
 
-
+.btnBlog a {
+  color: white;
+  text-decoration: none;
+}
 
 /* Eventos */
-
 .containerEventos {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   padding: 0 3rem;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   width: 49%;
   max-width: 560px;
 }
+
 .column h1 {
   margin: 0;
   font-size: 2.3rem;
@@ -473,34 +469,39 @@ body {
 }
 
 .fechaEvento {
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+  margin-top: 10px;
   padding: 6px 10px;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(234, 115, 92, 0.1);
+  border-radius: 8px;
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary2);
   font-weight: 700;
-  display: inline-block;
-  margin-right: 6px;
-  margin-top: 10px;
   opacity: 0.7;
-  width: fit-content;
-  background: rgba(234, 115, 92, 0.1);
 }
 
 .logoEvento {
+  padding-left: 38px;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjI1IDNIMy43NWExLjUgMS41IDAgMDAtMS41IDEuNVYxNWExLjUgMS41IDAgMDAxLjUgMS41aDEwLjVhMS41IDEuNSAwIDAwMS41LTEuNVY0LjVhMS41IDEuNSAwIDAwLTEuNS0xLjV6TTEyIDEuNXYzTTYgMS41djNNMi4yNSA3LjVoMTMuNSIgc3Ryb2tlPSIjRUE3MzVDIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+');
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 18px 18px;
-  padding-left: 38px;
 }
-
 
 /* Footer */
 .footer {
   background-color: var(--dark);
+}
+
+.footerSection {
+  margin-bottom: 1.5rem;
 }
 
 .footer .btn.btn-link {
@@ -529,6 +530,7 @@ body {
   letter-spacing: 1px;
   box-shadow: none;
 }
+
 .footerIcon {
   color: var(--primary2);
 }
@@ -567,13 +569,18 @@ body {
   color: rgb(119, 119, 119);
 }
 
-/*Flecha*/
-
+/* Flecha */
 .back-to-top {
   position: fixed;
   right: 30px;
   bottom: 30px;
+  display: none;
   z-index: 99;
+}
+
+.back-to-top:focus {
+  box-shadow: none;
+  outline: solid 2px black;
 }
 
 /* Media Queries */
@@ -591,10 +598,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .contactoNav {
-    display: none;
-  }
-
   .dropdown-menu::after {
     height: 60%;
     top: 100px;
@@ -631,6 +634,16 @@ body {
   .column {
     width: 100%;
     max-width: 700px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contactoNav {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin: 0;
   }
 
   .mediaLogo {
