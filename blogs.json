@@ -1,0 +1,18 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "titulo": "Intuition And Self-Fulfilling Prophecy",
+      "fecha": "2022-09-10",
+      "img": "https://images.unsplash.com/photo-1504177151729-0e0600389766?ixid=MnwxNzI5MTl8MHwxfGFsbHx8fHx8fHx8fDE2NDk2NTg5NDY&ixlib=rb-1.2.1&fm=jpg&q=85&fit=crop&w=773&h=1160",
+      "textoUrl": "blog1.md"
+    },
+    {
+      "id": 2,
+      "titulo": "Blessed Souls",
+      "fecha": "2022-03-04",
+      "img": "https://images.unsplash.com/photo-1476111021705-ac3b3304fe20?ixid=MnwxNzI5MTl8MHwxfGFsbHx8fHx8fHx8fDE2NTAzNTYyNDI&ixlib=rb-1.2.1&fm=jpg&q=85&fit=crop&w=774&h=1160",
+      "textoUrl": "blog2.md"
+    }
+  ]
+}

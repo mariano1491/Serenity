@@ -61,7 +61,7 @@
 /* Foto */
 .blogImg {
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding: 0 1rem;
   max-width: 70rem;
   height: 30rem;
@@ -77,19 +77,38 @@
 /* Contenido Blog */
 .containerBlog {
   margin: auto;
-  padding: 4rem 10rem;
+  padding: 3rem 10rem 4rem 10rem;
   max-width: 68rem;
   border-radius: 5px;
   background-color: var(--claro);
 }
 
 .containerBlog p {
-  margin: 0;
-  margin-top: 1.5rem;
   text-align: justify;
 }
 
-.subtitulo {
+.containerBlog img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.containerBlog a {
+  color: var(--primary);
+}
+
+.containerBlog a:hover {
+  color: var(--primary2);
+}
+
+.containerBlog h1,
+.containerBlog h2,
+.containerBlog h3,
+.containerBlog h4,
+.containerBlog h5,
+.containerBlog h6 {
+  margin: 1.5rem 0;
   font-weight: 600;
 }
 
@@ -144,5 +163,9 @@
 
   .blogImg {
     height: 25rem;
+  }
+
+  .containerBlog img {
+    height: 20rem;
   }
 }
