@@ -12,10 +12,6 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
-    <script
-      src="https://kit.fontawesome.com/8aa6e849c8.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -27,16 +23,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--Encabezado de la pagina-->
     <header>
-      <!--Encabezado de la pagina-->
-
       <section class="ftco-section">
         <div class="wrap contactoNav">
           <div class="container-fluid">
             <div class="row justify-content-between">
               <div class="col d-flex">
                 <p class="mb-0 infoHeader">
-                  <span class="fa fa-phone"></span> <a href="#">+00 1234 567</a>
+                  <span class="fa fa-phone"></span>
+                  <a href="#">+00 1234 567</a>
                 </p>
                 <p class="mb-0 infoHeader">
                   <span class="fa fa-envelope"></span>
@@ -77,10 +73,10 @@
                   </p>
                 </div>
               </div>
-              <a class="navbar-brand justify-content-center" href="index.html"
-                ><img src="./img/Serenity.png" alt="Logo Serenity"
-              /></a>
             </div>
+            <a class="navbar-brand justify-content-center" href="index.html"
+              ><img src="./img/Serenity.png" alt="Logo Serenity"
+            /></a>
           </div>
         </div>
         <nav class="navbar navbar-expand-lg ftco_navbar" id="ftco-navbar">
@@ -182,7 +178,7 @@
       </section>
     </header>
     <main>
-      <!--Parallax-->
+      <!-- Parallax -->
       <section>
         <div class="fondoIndex">
           <div class="fondo"></div>
@@ -199,8 +195,8 @@
           <div class="parallax"></div>
         </div>
       </section>
-      <!--Sobre mi-->
 
+      <!--Sobre mi-->
       <section class="sectionUno">
         <div class="container seccion seccionUno">
           <div class="seccionUnoInfo">
@@ -312,7 +308,9 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Ipsam, praesentium.
                   </p>
-                  <button class="btnBlog">Ver más</button>
+                  <button class="btnBlog">
+                    <a href="blog.html?id=1">Ver más</a>
+                  </button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -327,7 +325,9 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Ipsam, praesentium.
                   </p>
-                  <button class="btnBlog">Ver más</button>
+                  <button class="btnBlog">
+                    <a href="blog.html?id=2">Ver más</a>
+                  </button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -342,7 +342,9 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Ipsam, praesentium.
                   </p>
-                  <button class="btnBlog">Ver más</button>
+                  <button class="btnBlog">
+                    <a href="blog.html?id=3">Ver más</a>
+                  </button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -357,7 +359,9 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Ipsam, praesentium.
                   </p>
-                  <button class="btnBlog">Ver más</button>
+                  <button class="btnBlog">
+                    <a href="blog.html?id=4">Ver más</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -454,8 +458,8 @@
     >
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <h3 class="text-light mb-4">Contactos</h3>
+          <div class="col-lg-3 col-md-6 footerSection">
+            <h3 class="text-light mb-3">Contactos</h3>
             <p class="mb-2">
               <i class="fa fa-map-marker-alt footerIcon me-3"></i>123 Street,
               New York, USA
@@ -481,26 +485,31 @@
               ></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="text-light mb-4">Herramientas</h3>
+          <div class="col-lg-3 col-md-6 footerSection">
+            <h3 class="text-light mb-3">Herramientas</h3>
             <a class="btn btn-link" href="">El juego de la felicidad</a>
             <a class="btn btn-link" href="">Mandalas de felicidad</a>
             <a class="btn btn-link" href=""
               >La felicidad esta en las galletas</a
             >
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="text-light mb-4">Blog</h3>
+          <div class="col-lg-3 col-md-6 footerSection">
+            <h3 class="text-light mb-3">Blog</h3>
             <a class="btn btn-link" href="">Relaciones</a>
             <a class="btn btn-link" href="">Filosofía</a>
+<<<<<<< HEAD
             <a class="btn btn-link" href="">Propósito de vida</a>
             <a class="btn btn-link" href="">Política y Economía</a>
+=======
+            <a class="btn btn-link" href="">Proposito de vida</a>
+            <a class="btn btn-link" href="">Política y Economia</a>
+>>>>>>> santiago
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="text-light mb-4">Suscribirse</h3>
+          <div class="col-lg-3 col-md-6 footerSection">
+            <h3 class="text-light mb-3">Suscribirse</h3>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
-                class="bg-transparent w-100 py-3 ps-4 pe-5 inputEmail"
+                class="bg-transparent w-100 py-3 ps-3 pe-5 inputEmail"
                 type="text"
                 placeholder="Su Email"
               />
@@ -524,13 +533,15 @@
         </div>
       </div>
     </div>
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="fa fa-solid fa-arrow-up"></i
     ></a>
 
-    
+    <script
+      src="https://kit.fontawesome.com/8aa6e849c8.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -543,6 +554,6 @@
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/funcion1.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
