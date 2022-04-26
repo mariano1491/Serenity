@@ -3,7 +3,7 @@ const titulo = document.querySelector('.titulo');
 const fechaBlog = document.querySelector('.fechaEvento');
 const blogImg = document.querySelector('.blogImg');
 
-const id = window.location.hash.slice(1);
+const id = window.location.search.slice(-1);
 
 // Devuelve un array de la fecha dada [día, mes, año]
 const arrayFechas = (dia) => {
