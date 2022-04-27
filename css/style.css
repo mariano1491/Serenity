@@ -494,6 +494,21 @@ body {
   background-position: 10px;
   background-size: 18px 18px;
 }
+.btnEvento {
+  display: inline-block;
+  margin-top: 10px;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary2);
+  transition: all 250ms ease-in;
+}
+.btnEvento:hover {
+  background-color: var(--primary);
+  color: white;
+  transition: all 250ms ease-in;
+}
 
 /* Footer */
 .footer {
