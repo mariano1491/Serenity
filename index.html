@@ -311,10 +311,10 @@
           </a>
           <div class="d-flex">
             <span class="fechaEvento logoEvento">NOVIEMBRE 15, 2022</span>
-            <button class="btnEvento" id="1">Ver</button>
-           
+            <button type="button" class="btnEvento" id ="1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver
+            </button>
           </div>
-
         </div>
         <div class="column">
           <div class="containerEventosInner">
@@ -330,8 +330,10 @@
                 <h1>Evento2</h1>
               </a>
               <div class="d-flex"><span class="fechaEvento logoEvento">AGOSTO 3, 2022</span>
-                <button class="btnEvento" id="2">Ver</button></div>
-
+                <button type="button" class="btnEvento" id ="2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver
+                </button>
+              </div>
             </div>
             <div class="two-column">
               <div class="eventoImg">
@@ -347,7 +349,9 @@
               <div class="d-flex">
 
                 <span class="fechaEvento logoEvento">JULIO 23, 2022</span>
-                <button class="btnEvento" id="3" >Ver</button>
+                <button type="button" class="btnEvento" id ="3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver
+                </button>
               </div>
             </div>
             <div class="two-column">
@@ -363,7 +367,9 @@
               </a>
               <div class="d-flex">
                 <span class="fechaEvento logoEvento">ABRIL 20, 2022</span>
-                <button class="btnEvento" id="4">Ver</button>
+                <button type="button" class="btnEvento" id ="4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver
+                </button>
               </div>
 
             </div>
@@ -378,34 +384,28 @@
               </a>
               <div class="d-flex">
                 <span class="fechaEvento logoEvento">APRIL 15, 2022</span>
-                <button class="btnEvento" id="5">Ver</button>
-              
+                <button type="button" class="btnEvento" id ="5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver
+                </button>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
-
+    </section>  
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body" id="cuerpoModal">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Incribirse</button>
           </div>
         </div>
       </div>

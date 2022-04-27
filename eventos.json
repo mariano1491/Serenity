@@ -1,39 +1,39 @@
 {
-    "eventos": [{
-            "id": "1",
-            "titulo": "evento1",
-            "img": "https://chopra.brightspotcdn.com/dims4/default/92b2eac/2147483647/strip/true/crop/5472x3127+0+0/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Ff9%2Fee%2F8c409c104820b0341739fa12f4fe%2Fgettyimages-872960672.jpg",
-            "fecha": "2022-09-10",
-            "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-
-        },
-        {
-            "id": "2",
-            "titulo": "evento2",
-            "img": "https://chopra.brightspotcdn.com/dims4/default/92b2eac/2147483647/strip/true/crop/5472x3127+0+0/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Ff9%2Fee%2F8c409c104820b0341739fa12f4fe%2Fgettyimages-872960672.jpg",
-            "fecha": "2022-09-10",
-            "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        },
-        {
-            "id": "3",
-            "titulo": "evento3",
-            "img": "https://chopra.brightspotcdn.com/dims4/default/c05afb7/2147483647/strip/true/crop/6720x3840+0+69/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F9b%2Fd2%2F61342fdb4274a3c835305bdba18d%2Fgettyimages-1024613038.jpg",
-            "fecha": "2022-09-10",
-            "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        },
-        {
-            "id": "4",
-            "titulo": "evento4",
-            "img": "https://chopra.brightspotcdn.com/dims4/default/82107f3/2147483647/strip/true/crop/4979x2845+0+342/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F43%2F09%2F44d6c4e844f8be836f5d3d91d76b%2Fgettyimages-1030850466.jpg",
-            "fecha": "2022-09-10",
-            "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        },
-        {
-            "id": "5",
-            "titulo": "evento5",
-            "img": "https://chopra.brightspotcdn.com/dims4/default/fd3d7b8/2147483647/strip/true/crop/5760x3291+0+321/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F84%2F52%2F7b6235894c84a191b43c15ca8f1b%2Fgettyimages-1299550772.jpg",
-            "fecha": "2022-09-10",
-            "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-    ]
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "evento1",
+      "img": "https://chopra.brightspotcdn.com/dims4/default/5ed2191/2147483647/strip/true/crop/8660x3608+0+1650/resize/1200x500!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F05%2Fa2%2F90b8820a40cbb8583e7835392f65%2Fgettyimages-1081944180.jpg",
+      "fecha": "2022-09-10",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 2,
+      "titulo": "Evento 2",
+      "img": "https://chopra.brightspotcdn.com/dims4/default/92b2eac/2147483647/strip/true/crop/5472x3127+0+0/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Ff9%2Fee%2F8c409c104820b0341739fa12f4fe%2Fgettyimages-872960672.jpg",
+      "fecha": "2022-09-10",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 3,
+      "titulo": "evento3",
+      "img": "https://chopra.brightspotcdn.com/dims4/default/c05afb7/2147483647/strip/true/crop/6720x3840+0+69/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F9b%2Fd2%2F61342fdb4274a3c835305bdba18d%2Fgettyimages-1024613038.jpg",
+      "fecha": "2022-09-10",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 4,
+      "titulo": "evento4",
+      "img": "https://chopra.brightspotcdn.com/dims4/default/82107f3/2147483647/strip/true/crop/4979x2845+0+342/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F43%2F09%2F44d6c4e844f8be836f5d3d91d76b%2Fgettyimages-1030850466.jpg",
+      "fecha": "2022-09-10",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 5,
+      "titulo": "evento5",
+      "img": "https://chopra.brightspotcdn.com/dims4/default/fd3d7b8/2147483647/strip/true/crop/5760x3291+0+321/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F84%2F52%2F7b6235894c84a191b43c15ca8f1b%2Fgettyimages-1299550772.jpg",
+      "fecha": "2022-09-10",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ]
 }

@@ -502,6 +502,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: var(--primary2);
+  color: white;
   transition: all 250ms ease-in;
 }
 .btnEvento:hover {
@@ -583,6 +584,31 @@ body {
 .mb-2 {
   color: rgb(119, 119, 119);
 }
+
+/* Modal */
+.modal-header {
+  position: relative;
+  justify-content: center;
+}
+
+.btn-close {
+  position: absolute;
+  right: 1rem;
+}
+
+.modal-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal-body img {
+  border-radius: 5px;
+}
+
+.modal-body p {
+  margin-top: 20px;
+}
+
 
 /* Flecha */
 .back-to-top {

@@ -13,3 +13,26 @@ const swiper = new Swiper(".mySwiper", {
   },
   loop: true
 });
+
+// Modal Eventos
+const btnEventos = document.querySelectorAll('.btnEvento');
+const modalTitle = document.querySelector('.modal-title');
+const modalBody = document.querySelector('.modal-body');
+
+async function getEvento(id) {
+  const todo = await (await fetch('../eventos.json')).json();
+  return todo.eventos.find(e => e.id == id);
+}
+
+btnEventos.forEach(btn => btn.addEventListener('click', async e => {
+  const id = e.target.id;
+  const evento = await getEvento(id);
+
+  modalTitle.textContent = evento.titulo;
+  modalBody.innerHTML = `
+  <div class="w-100">
+    <img class="w-100" src="${evento.img}" alt="">
+  </div>
+  <p>${evento.descripcion}</p>
+  `;
+}));
