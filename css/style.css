@@ -4,7 +4,7 @@
   --primary: #ff5c5c;
   --light: rgb(245, 245, 245);
   --dark: #252525;
-  --claro: #faf4eb;
+  --claro: #ffebeb;
   --primary2: #ff7979;
 }
 
@@ -75,7 +75,7 @@ body {
   justify-content: space-around;
   padding: 0 1rem;
   padding-top: 0.2rem;
-  background-color: var(--claro);
+  background-color: #ffebeb;
 }
 
 .infoHeader {
@@ -107,7 +107,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: var(--claro);
+  background-color: #ffebeb;
   font-size: 0.9rem;
   text-align: center;
 }
@@ -472,7 +472,7 @@ body {
   padding: 6px 10px;
   width: fit-content;
   height: fit-content;
-  background: rgba(234, 115, 92, 0.1);
+  background: #ffebeb;
   border-radius: 8px;
   font-size: 12px;
   line-height: 200%;
