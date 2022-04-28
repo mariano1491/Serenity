@@ -238,7 +238,17 @@ body {
 }
 
 #sobreMi {
+  text-align: center;
   margin-bottom: 1rem;
+}
+
+#santiago {
+  display: block;
+  margin-bottom: 10px;
+  /* text-align: center; */
+  color: var(--dark);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .seccionUnoInfo {
@@ -376,6 +386,7 @@ body {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 5px;
+  color: white;
   background-color: var(--primary2);
   transition: all 250ms ease-in;
 }
@@ -584,9 +595,9 @@ body {
 }
 
 /* Modal */
-/* .modal-dialog {
+.modal-dialog {
   max-width: 50rem;
-} */
+}
 
 .modal-header {
   position: relative;
@@ -631,113 +642,4 @@ body {
 .back-to-top:focus {
   box-shadow: none;
   outline: solid 2px black;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-  .fotoSantiago {
-    width: 20rem;
-    height: 20rem;
-  }
-}
-
-@media (max-width: 1120px) {
-  .searchform {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  .dropdown-menu::after {
-    height: 60%;
-    top: 100px;
-  }
-  .dropdown-menu2::after {
-    height: 70%;
-    top: 115px;
-  }
-
-  .dropdown-menu {
-    border-color: var(--light);
-  }
-
-  .seccionUno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .seccionUnoInfo {
-    width: initial;
-  }
-
-  .fotoSantiago {
-    display: none;
-  }
-
-  .containerEventos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column {
-    width: 100%;
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 991px) {
-  .contactoNav {
-    display: none;
-  }
-
-  .navbar-brand {
-    margin: 0;
-  }
-
-  .mediaLogo {
-    display: initial;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .tituloSlider {
-    left: 55%;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .carousel {
-    height: 25rem;
-  }
-
-  .tituloSlider {
-    left: 60%;
-  }
-
-  .sectionUno {
-    margin: 3.75rem 1.5rem 0 1.5rem;
-  }
-
-  .containerEventosInner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .two-column {
-    width: 100%;
-  }
-
-  .eventoImg {
-    height: 200px;
-  }
-
-  .two-column .eventoImg {
-    max-height: 200px;
-  }
 }

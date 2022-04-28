@@ -34,7 +34,7 @@ const modalBody = document.querySelector('.modal-body');
 
 async function getEvento(id) {
   const todo = await (await fetch('./eventos.json')).json();
-  return todo.eventos.find(e => e.id == id);
+  return todo.eventos[id -1];
 }
 
 btnEventos.forEach(btn => btn.addEventListener('click', async e => {

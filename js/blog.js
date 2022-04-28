@@ -18,7 +18,7 @@ const arrayFechas = (dia) => {
 // Busca un blog por el id
 const buscarBlog = async (id) => {
   const blogs = await (await fetch('./blogs.json')).json();
-  return blogs.blogs.find(e => e.id == id);
+  return blogs.blogs[id - 1];
 };
 // Agrega el texto al HTML
 const agregarTexto = async (blog) => {
