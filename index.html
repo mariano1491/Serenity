@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!--Encabezado de la pagina-->
     <header>
@@ -248,7 +249,9 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's.
                 </p>
-                <a href="" id="juego" class="btnPrimary">Ver más</a>
+                <a href="herramientas.html" id="juego" class="btnPrimary"
+                  >Ver más</a
+                >
               </div>
             </div>
             <div class="card sombraSeccionDos mb-3" style="max-width: 20rem">
@@ -264,7 +267,9 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="" id="mandalas" class="btnPrimary">Ver más</a>
+                <a href="herramientas.html" id="mandalas" class="btnPrimary"
+                  >Ver más</a
+                >
               </div>
             </div>
             <div class="card sombraSeccionDos mb-3" style="max-width: 20rem">
@@ -281,7 +286,9 @@
                   Some quick example text to build on the card title and make up
                   the bulk.
                 </p>
-                <a href="" id="galletas" class="btnPrimary">Ver más</a>
+                <a href="herramientas.html" id="galletas" class="btnPrimary"
+                  >Ver más</a
+                >
               </div>
             </div>
           </div>
@@ -309,7 +316,7 @@
                     Ipsam, praesentium.
                   </p>
                   <button class="btnBlog">
-                    <a href="blog.html#1">Ver más</a>
+                    <a href="blog.html?id=1">Ver más</a>
                   </button>
                 </div>
               </div>
@@ -326,7 +333,7 @@
                     Ipsam, praesentium.
                   </p>
                   <button class="btnBlog">
-                    <a href="blog.html#2">Ver más</a>
+                    <a href="blog.html?id=2">Ver más</a>
                   </button>
                 </div>
               </div>
@@ -343,7 +350,7 @@
                     Ipsam, praesentium.
                   </p>
                   <button class="btnBlog">
-                    <a href="blog.html#3">Ver más</a>
+                    <a href="blog.html?id=3">Ver más</a>
                   </button>
                 </div>
               </div>
@@ -360,7 +367,7 @@
                     Ipsam, praesentium.
                   </p>
                   <button class="btnBlog">
-                    <a href="blog.html#4">Ver más</a>
+                    <a href="blog.html?id=4">Ver más</a>
                   </button>
                 </div>
               </div>
@@ -378,61 +385,89 @@
         <div class="containerEventos">
           <div class="column">
             <div class="eventoImg">
-              <a href="#">
-                <img
-                  src="https://chopra.brightspotcdn.com/dims4/default/5ed2191/2147483647/strip/true/crop/8660x3608+0+1650/resize/1200x500!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F05%2Fa2%2F90b8820a40cbb8583e7835392f65%2Fgettyimages-1081944180.jpg"
-                  alt=""
-                />
-              </a>
+              <img
+                src="https://chopra.brightspotcdn.com/dims4/default/5ed2191/2147483647/strip/true/crop/8660x3608+0+1650/resize/1200x500!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F05%2Fa2%2F90b8820a40cbb8583e7835392f65%2Fgettyimages-1081944180.jpg"
+                alt=""
+              />
             </div>
-            <a href="#">
-              <h1>Title</h1>
-            </a>
-            <span class="fechaEvento logoEvento">NOVIEMBRE 15, 2022</span>
+            <h1 class="eventoTitulo">Evento 1</h1>
+            <div class="d-flex">
+              <span class="fechaEvento logoEvento">NOVIEMBRE 15, 2022</span>
+              <button
+                type="button"
+                class="btnEvento"
+                id="1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Ver
+              </button>
+            </div>
           </div>
           <div class="column">
             <div class="containerEventosInner">
               <div class="two-column">
                 <div class="eventoImg">
-                  <a href="#">
-                    <img
-                      src="https://chopra.brightspotcdn.com/dims4/default/92b2eac/2147483647/strip/true/crop/5472x3127+0+0/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Ff9%2Fee%2F8c409c104820b0341739fa12f4fe%2Fgettyimages-872960672.jpg"
-                      alt=""
-                    />
-                  </a>
+                  <img
+                    src="https://chopra.brightspotcdn.com/dims4/default/92b2eac/2147483647/strip/true/crop/5472x3127+0+0/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Ff9%2Fee%2F8c409c104820b0341739fa12f4fe%2Fgettyimages-872960672.jpg"
+                    alt=""
+                  />
                 </div>
-                <a href="#">
-                  <h1>Title</h1>
-                </a>
-                <span class="fechaEvento logoEvento">AGOSTO 3, 2022</span>
+                <h1 class="eventoTitulo">Evento 2</h1>
+                <div class="d-flex">
+                  <span class="fechaEvento logoEvento">AGOSTO 3, 2022</span>
+                  <button
+                    type="button"
+                    class="btnEvento"
+                    id="2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Ver
+                  </button>
+                </div>
               </div>
               <div class="two-column">
                 <div class="eventoImg">
-                  <a href="#">
-                    <img
-                      src="https://chopra.brightspotcdn.com/dims4/default/c05afb7/2147483647/strip/true/crop/6720x3840+0+69/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F9b%2Fd2%2F61342fdb4274a3c835305bdba18d%2Fgettyimages-1024613038.jpg"
-                      alt=""
-                    />
-                  </a>
+                  <img
+                    src="https://chopra.brightspotcdn.com/dims4/default/c05afb7/2147483647/strip/true/crop/6720x3840+0+69/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F9b%2Fd2%2F61342fdb4274a3c835305bdba18d%2Fgettyimages-1024613038.jpg"
+                    alt=""
+                  />
                 </div>
-                <a href="#">
-                  <h1>Title</h1>
-                </a>
-                <span class="fechaEvento logoEvento">JULIO 23, 2022</span>
+                <h1 class="eventoTitulo">Evento 3</h1>
+                <div class="d-flex">
+                  <span class="fechaEvento logoEvento">JULIO 23, 2022</span>
+                  <button
+                    type="button"
+                    class="btnEvento"
+                    id="3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Ver
+                  </button>
+                </div>
               </div>
               <div class="two-column">
                 <div class="eventoImg">
-                  <a href="#">
-                    <img
-                      src="https://chopra.brightspotcdn.com/dims4/default/82107f3/2147483647/strip/true/crop/4979x2845+0+342/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F43%2F09%2F44d6c4e844f8be836f5d3d91d76b%2Fgettyimages-1030850466.jpg"
-                      alt=""
-                    />
-                  </a>
+                  <img
+                    src="https://chopra.brightspotcdn.com/dims4/default/82107f3/2147483647/strip/true/crop/4979x2845+0+342/resize/504x288!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2F43%2F09%2F44d6c4e844f8be836f5d3d91d76b%2Fgettyimages-1030850466.jpg"
+                    alt=""
+                  />
                 </div>
-                <a href="#">
-                  <h1>Title</h1>
-                </a>
-                <span class="fechaEvento logoEvento">ABRIL 20, 2022</span>
+                <h1 class="eventoTitulo">Evento 4</h1>
+                <div class="d-flex">
+                  <span class="fechaEvento logoEvento">ABRIL 20, 2022</span>
+                  <button
+                    type="button"
+                    class="btnEvento"
+                    id="4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Ver
+                  </button>
+                </div>
               </div>
               <div class="two-column">
                 <div class="eventoImg">
@@ -441,15 +476,57 @@
                     alt=""
                   />
                 </div>
-                <a href="#">
-                  <h1>Title</h1>
-                </a>
-                <span class="fechaEvento logoEvento">SEPTIEMBRE 15, 2022</span>
+                <h1 class="eventoTitulo">Evento 5</h1>
+                <div class="d-flex">
+                  <span class="fechaEvento logoEvento">APRIL 15, 2022</span>
+                  <button
+                    type="button"
+                    class="btnEvento"
+                    id="5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Ver
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" id="cuerpoModal"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">Incribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer Start -->
     <div
@@ -487,18 +564,29 @@
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Herramientas</h3>
-            <a class="btn btn-link" href="">El juego de la felicidad</a>
-            <a class="btn btn-link" href="">Mandalas de felicidad</a>
-            <a class="btn btn-link" href=""
+            <a class="btn btn-link" href="#herramientas"
+              >El juego de la felicidad</a
+            >
+            <a class="btn btn-link" href="#herramientas"
+              >Mandalas de felicidad</a
+            >
+            <a class="btn btn-link" href="#herramientas"
               >La felicidad esta en las galletas</a
             >
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Blog</h3>
+<<<<<<< HEAD
             <a class="btn btn-link" href="blog.html#1">Relaciones</a>
             <a class="btn btn-link" href="blog.html#2">Filosofía</a>
             <a class="btn btn-link" href="blog.html#3">Proposito de vida</a>
             <a class="btn btn-link" href="blog.html#4">Política y Economia</a>
+=======
+            <a class="btn btn-link" href="#blog">Relaciones</a>
+            <a class="btn btn-link" href="#blog">Filosofía</a>
+            <a class="btn btn-link" href="#blog">Propósito de vida</a>
+            <a class="btn btn-link" href="#blog">Política y Economía</a>
+>>>>>>> master
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Suscribirse</h3>
@@ -548,7 +636,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/backToTop.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/swiper.js"></script>
   </body>
 </html>

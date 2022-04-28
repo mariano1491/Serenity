@@ -1,0 +1,42 @@
+/* Herramientas */
+.herramientas h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark);
+    text-decoration-color: var(--primary2);
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.4rem;
+    text-decoration-line: underline;
+}
+
+.herramientasSeccion {
+    background-color: var(--claro);
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.herramientas h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.herramientas img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 350ms ease;
+}
+
+.herramientas img:hover {
+    box-shadow: 0 2px 8px 5px #0000001a;
+    transition: all 250ms ease;
+    transform: scale(1.1);
+}
+
+.herramientas p {
+    padding: 30px 40px 50px 40px;
+}
