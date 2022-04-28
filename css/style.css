@@ -408,18 +408,14 @@ body {
 
 .column h1 {
   margin: 0;
-  font-size: 2.3rem;
-}
-
-.column a {
-  display: block;
   width: fit-content;
-  text-decoration: none;
+  font-size: 2.3rem;
   color: black;
+  cursor: pointer;
   transition: all 350ms ease;
 }
 
-.column a:hover {
+.column h1:hover {
   color: var(--primary2);
   transition: all 250ms ease;
 }
@@ -494,6 +490,7 @@ body {
   background-position: 10px;
   background-size: 18px 18px;
 }
+
 .btnEvento {
   display: inline-block;
   margin-top: 10px;
@@ -505,6 +502,7 @@ body {
   color: white;
   transition: all 250ms ease-in;
 }
+
 .btnEvento:hover {
   background-color: var(--primary);
   color: white;
@@ -586,6 +584,10 @@ body {
 }
 
 /* Modal */
+/* .modal-dialog {
+  max-width: 50rem;
+} */
+
 .modal-header {
   position: relative;
   justify-content: center;
@@ -601,14 +603,21 @@ body {
   padding-right: 20px;
 }
 
+.modalImg {
+  width: 100%;
+  height: 15rem;
+}
+
 .modal-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 
 .modal-body p {
   margin-top: 20px;
 }
-
 
 /* Flecha */
 .back-to-top {

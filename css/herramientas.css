@@ -1,5 +1,4 @@
-/*Herramientas*/
-
+/* Herramientas */
 .herramientas h1 {
     margin-top: 80px;
     text-align: center;
@@ -11,19 +10,7 @@
     text-decoration-line: underline;
 }
 
-.herramientas_1 {
-    background-color: var(--claro);
-    margin-top: 100px;
-    padding-top: 50px;
-}
-
-.herramientas_2 {
-    background-color: var(--claro);
-    margin-top: 100px;
-    padding-top: 50px;
-}
-
-.herramientas_3 {
+.herramientasSeccion {
     background-color: var(--claro);
     margin-top: 100px;
     padding-top: 50px;
@@ -51,6 +38,5 @@
 }
 
 .herramientas p {
-
     padding: 30px 40px 50px 40px;
 }
