@@ -33,12 +33,7 @@ const modalTitle = document.querySelector('.modal-title');
 const modalBody = document.querySelector('.modal-body');
 
 async function getEvento(id) {
-  const todo = await (await fetch('../eventos.json', {
-    'mode': 'cors',
-    'headers': {
-      'Access-Control-Allow-Origin': '*',
-    }
-  })).json();
+  const todo = await (await fetch('./eventos.json')).json();
   return todo.eventos.find(e => e.id == id);
 }
 
