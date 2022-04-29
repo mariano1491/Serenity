@@ -61,6 +61,10 @@
     margin: 0;
   }
 
+  .navbar-brand h1 {
+    font-size: 3rem;
+  }
+
   .mediaLogo {
     display: initial;
   }

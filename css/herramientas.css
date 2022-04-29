@@ -1,4 +1,8 @@
 /* Herramientas */
+.herramientasLink > a {
+    color: var(--primary);
+}
+
 .herramientas h1 {
     margin-top: 80px;
     text-align: center;
