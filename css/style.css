@@ -666,3 +666,12 @@ body {
   box-shadow: none;
   outline: solid 2px black;
 }
+/*FORMULARIO*/
+
+#formulario {
+  border: 1px solid black;
+  margin: 20px;
+}
+div label imput::hover {
+  background-color: #ff5c5c;
+}
