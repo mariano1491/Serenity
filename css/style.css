@@ -106,13 +106,6 @@ body {
   transition: all ease-in 150ms;
 }
 
-/* .sticky {
-  position: fixed;
-  top: -36.794px;
-  width: 100%;
-  z-index: 5;
-} */
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -126,11 +119,6 @@ body {
   margin: auto;
   width: fit-content;
 }
-/* 
-.navbar-brand img {
-  width: 200px;
-  height: 60px;
-} */
 
 .navbar-brand h1 {
   color: var(--dark);
@@ -665,13 +653,4 @@ body {
 .back-to-top:focus {
   box-shadow: none;
   outline: solid 2px black;
-}
-/*FORMULARIO*/
-
-#formulario {
-  border: 1px solid black;
-  margin: 20px;
-}
-div label imput::hover {
-  background-color: #ff5c5c;
 }

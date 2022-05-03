@@ -1,0 +1,59 @@
+/* Contacto */
+.contactoLink > a {
+  color: var(--primary);
+}
+
+.formulario {
+  margin: 0 10rem;
+  padding: 3rem 2rem;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+.formContainer {
+  margin: auto;
+  max-width: 54.6rem;
+}
+
+.form-label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.formInput,
+.inputTexto {
+  padding: 0.5rem 0.5rem;
+  border: 1px var(--primary) solid;
+  border-radius: 5px;
+}
+
+.formInput:focus,
+.inputTexto:focus {
+  outline: 1px solid var(--primary);
+}
+
+.formInput {
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.inputTextContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.inputTexto {
+  height: 13rem;
+  resize: none;
+}
+
+.inputBtn {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary2);
+}
+
+.inputBtn:hover {
+  background-color: var(--primary);
+}

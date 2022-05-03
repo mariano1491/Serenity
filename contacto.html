@@ -21,8 +21,9 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
-
   <body>
     <!--Encabezado de la pagina-->
     <header>
@@ -76,8 +77,8 @@
               </div>
             </div>
             <a class="navbar-brand justify-content-center" href="index.html"
-              ><img src="./img/Serenity.png" alt="Logo Serenity"
-            /></a>
+              ><h1>Serenity</h1></a
+            >
           </div>
         </div>
         <nav class="navbar navbar-expand-lg ftco_navbar" id="ftco-navbar">
@@ -85,8 +86,8 @@
             <a
               class="navbar-brand justify-content-center mediaLogo"
               href="index.html"
-              ><img src="./img/Serenity.png" alt="Logo Serenity"
-            /></a>
+              ><h1>Serenity</h1></a
+            >
             <button
               class="navbar-toggler btn"
               type="button"
@@ -101,9 +102,9 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
               <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
-                  <a href="#sobreMi" class="nav-link">Sobre mi</a>
+                  <a href="index.html#sobreMi" class="nav-link">Sobre mi</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown herramientasLink">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#herramientas"
@@ -116,17 +117,17 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="#herramientas"
+                      <a class="dropdown-item" href="herramientas.html"
                         >El juego de la felicidad</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#herramientas"
+                      <a class="dropdown-item" href="herramientas.html"
                         >Mandalas de felicidad</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#herramientas"
+                      <a class="dropdown-item" href="herramientas.html"
                         >La felicidad esta en las galletas (libro)
                       </a>
                     </li>
@@ -148,16 +149,22 @@
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a class="dropdown-item" href="#blog">Relaciones</a>
+                      <a class="dropdown-item" href="blog.html?id=1"
+                        >Relaciones</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#blog">Filosofía</a></li>
                     <li>
-                      <a class="dropdown-item" href="#blog"
+                      <a class="dropdown-item" href="blog.html?id=2"
+                        >Filosofía</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog.html?id=3"
                         >Propósito de vida</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#blog"
+                      <a class="dropdown-item" href="blog.html?id=4"
                         >Política y Economía</a
                       >
                     </li>
@@ -167,10 +174,12 @@
                   <a href="#" class="nav-link">Podcast</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#eventos" class="nav-link">Eventos Públicos</a>
+                  <a href="index.html#eventos" class="nav-link"
+                    >Eventos Públicos</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Conferencias</a>
+                <li class="nav-item contactoLink">
+                  <a href="contacto.html" class="nav-link">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -178,39 +187,66 @@
         </nav>
       </section>
     </header>
-    <main>
-     
-    <h2 id="contacto" class="text-center m-5">Contacto</h2>
-    <form class="row g-3 p-5 " id="formulario">
-      <div class="col-md-6">
-        <label for="nombre" class="form-label"></label>
-        <input type="text" id="inputNombre" class="form-control" name="inputNombre" placeholder="Nombre"
-          aria-label="Nombre">
-      </div>
-      <div class="col-md-6">
-        <label for="apellido" class="form-label"></label>
-        <input type="text" id="inputApellido" class="form-control" name="inputApellido" placeholder="Apellido"
-          aria-label="Apellido">
-      </div>
-
-      <div class="col-md-6">
-        <label for="inputEmail" class="form-label"></label>
-        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email@ejemplo.com">
-      </div>
-
-      <div class="col-md-6">
-        <label for="inputAdress" class="form-label"></label>
-        <input type="text" class="form-control" id="inputAdress" name="inputAdress" placeholder="Direccion: xxx">
-      </div>
-      <div class="mb-3">
-        <label for="validationTextarea" class="form-label"></label>
-        <textarea class="form-control p-5" id="validationTextarea" name="validationTextarea"
-          placeholder="Escriba su consulta" required></textarea>
-      </div>
-      <div class="col-12 text-center">
-        <button type="submit" id="botonInput" class="btn btn-primary">Enviar</button>
-      </div>
-    </form>
+    <main class="seccion">
+      <h2 class="text-center m-5">Contacto</h2>
+      <form class="formulario">
+        <div class="row g-3 formContainer">
+          <div class="col-md-6 inputContainer">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="formInput"
+              name="inputNombre"
+              placeholder="Nombre"
+              aria-label="Nombre"
+            />
+          </div>
+          <div class="col-md-6 inputContainer">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="formInput"
+              name="inputApellido"
+              placeholder="Apellido"
+              aria-label="Apellido"
+            />
+          </div>
+          <div class="col-md-6 inputContainer">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="formInput"
+              name="inputEmail"
+              placeholder="Email@ejemplo.com"
+            />
+          </div>
+          <div class="col-md-6 inputContainer">
+            <label for="inputAdress" class="form-label">Dirección</label>
+            <input
+              type="text"
+              class="formInput"
+              name="inputAdress"
+              placeholder="Direccion: xxx"
+            />
+          </div>
+          <div class="inputTextContainer">
+            <label for="validationTextarea" class="form-label"
+              >Escriba su consulta</label
+            >
+            <textarea
+              class="inputTexto"
+              name="validationTextarea"
+              placeholder="Escriba su consulta"
+              required
+            ></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary inputBtn">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
     </main>
     <!-- Footer Start -->
     <div
@@ -248,22 +284,24 @@
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Herramientas</h3>
-            <a class="btn btn-link" href="#herramientas"
+            <a class="btn btn-link" href="herramientas.html"
               >El juego de la felicidad</a
             >
-            <a class="btn btn-link" href="#herramientas"
+            <a class="btn btn-link" href="herramientas.html"
               >Mandalas de felicidad</a
             >
-            <a class="btn btn-link" href="#herramientas"
+            <a class="btn btn-link" href="herramientas.html"
               >La felicidad esta en las galletas</a
             >
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Blog</h3>
-            <a class="btn btn-link" href="#blog">Relaciones</a>
-            <a class="btn btn-link" href="#blog">Filosofía</a>
-            <a class="btn btn-link" href="#blog">Propósito de vida</a>
-            <a class="btn btn-link" href="#blog">Política y Economía</a>
+            <a class="btn btn-link" href="blog.html?id=1">Relaciones</a>
+            <a class="btn btn-link" href="blog.html?id=2">Filosofía</a>
+            <a class="btn btn-link" href="blog.html?id=3">Propósito de vida</a>
+            <a class="btn btn-link" href="blog.html?id=4"
+              >Política y Economía</a
+            >
           </div>
           <div class="col-lg-3 col-md-6 footerSection">
             <h3 class="text-light mb-3">Suscribirse</h3>
