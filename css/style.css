@@ -181,6 +181,7 @@ body {
 /* Parallax */
 .fondoIndex {
   position: relative;
+  height: 41rem;
   font-size: 1.2rem;
   color: var(--light);
 }
