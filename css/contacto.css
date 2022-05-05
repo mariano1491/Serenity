@@ -23,19 +23,20 @@
 .formInput,
 .inputTexto {
   padding: 0.5rem 0.5rem;
-  border: 1px var(--primary) solid;
+  border: 1px var(--dark) solid;
   border-radius: 5px;
 }
 
 .formInput:focus,
 .inputTexto:focus {
-  outline: 1px solid var(--primary);
+  outline: 1px solid var(--dark);
 }
 
 .formInput {
   margin-bottom: 1rem;
   width: 100%;
   outline: none;
+
 }
 
 .inputTextContainer {
@@ -51,7 +52,7 @@
 
 .inputBtn {
   padding: 0.8rem 1.5rem;
-  border: 1px solid var(--dark);
+ border: none;
   border-radius: 5px;
   background-color: var(--btnBg);
 }

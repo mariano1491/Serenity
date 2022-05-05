@@ -6,7 +6,7 @@
   --light: rgb(245, 245, 245);
   --dark: #252525;
   --claro: #faf4eb;
-  --primary2: #ff7979;
+  --primary2: rgb(226, 211, 184);
   --btnBg: rgb(228, 221, 209);
   --btnBgHover: rgb(226, 211, 184);
 }
@@ -39,6 +39,7 @@ body {
 .btn.btn-secondary {
   background-color: var(--primary2);
   border-color: var(--primary2);
+  color: var(--dark);
 }
 
 .btn-square {
@@ -502,7 +503,7 @@ body {
   line-height: 200%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--primary2);
+  color: var(--dark);
   font-weight: 700;
   opacity: 0.7;
 }
