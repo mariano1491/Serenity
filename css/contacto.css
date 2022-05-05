@@ -51,9 +51,11 @@
 
 .inputBtn {
   padding: 0.8rem 1.5rem;
-  background-color: var(--primary2);
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  background-color: var(--btnBg);
 }
 
 .inputBtn:hover {
-  background-color: var(--primary);
+  background-color: var(--btnBgHover);
 }

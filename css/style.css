@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
-
 :root {
   --primary: #ff5c5c;
   --light: rgb(245, 245, 245);
   --dark: #252525;
   --claro: #faf4eb;
   --primary2: #ff7979;
+  --btnBg: rgb(228, 221, 209);
+  --btnBgHover: rgb(226, 211, 184);
 }
 
 body {
@@ -210,13 +211,13 @@ body {
 }
 
 .btnFondoIndex {
+  background-color: var(--btnBg);
   color: var(--dark);
-  background-color: rgb(228, 221, 209);
 }
 
 .btnFondoIndex:hover {
-  transform: scale(1.2);
-  background-color: rgb(226, 211, 184);
+  transform: scale(1.1);
+  background-color: var(--btnBgHover);
   color: var(--dark);
 }
 
@@ -327,8 +328,8 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
-  background-color: var(--primary2);
-  color: white;
+  background-color: var(--btnBg);
+  color: var(--dark);
   font-weight: 300;
   text-decoration: none;
   transition: transform ease-in 250ms;
@@ -336,8 +337,8 @@ body {
 
 .btnPrimary:hover {
   transform: scale(1.05);
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--btnBgHover);
+  color: var(--dark);
   transition: transform ease-in 250ms;
 }
 
@@ -398,19 +399,19 @@ body {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 5px;
-  color: white;
-  background-color: var(--primary2);
+  color: var(--dark);
+  background-color: var(--btnBg);
   transition: all 250ms ease-in;
 }
 
 .btnBlog:hover {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--btnBgHover);
+  color: var(--dark);
   transition: all 250ms ease-in;
 }
 
 .btnBlog a {
-  color: white;
+  color: var(--dark);
   text-decoration: none;
 }
 
@@ -521,14 +522,14 @@ body {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 5px;
-  background-color: var(--primary2);
-  color: white;
+  background-color: var(--btnBg);
+  color: var(--dark);
   transition: all 250ms ease-in;
 }
 
 .btnEvento:hover {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--btnBgHover);
+  color: var(--dark);
   transition: all 250ms ease-in;
 }
 
